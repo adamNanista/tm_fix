@@ -1,0 +1,358 @@
+div.vyhlasenia{
+	max-width: 550px;
+}
+.vyhlasenia p{
+	display: inline;
+}
+
+.comparator-categories {
+  display: none;
+  margin-left: -5px;
+}
+.comparator-categories ul,
+.comparator-categories li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comparator-categories ul {
+  display: table-row;
+}
+.comparator-categories li {
+  display: table-cell;
+  overflow: hidden;
+  padding-left: 5px;
+}
+.comparator-categories a {
+  display: block;
+  padding: 10px 10px 0 10px;
+  border-radius: 10px 10px 0 0;
+  height: 48px;
+  background: #5c6bc0;
+  white-space: nowrap;
+  line-height: 1.2;
+  font-size: 13px;
+  font-weight: bold;
+  color: #c5cae9;
+}
+.comparator-categories a:hover {
+  text-decoration: none;
+  background: #d7daf0;
+  background: linear-gradient(to bottom, #c5cae9, #e8eaf6);
+}
+.comparator-categories a small {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+}
+.comparator-categories a:hover small {
+  color: #596bbf;
+}
+.comparator-categories .active a {
+  background: #e8eaf6;
+  color: #fe4445;
+  height: 52px;
+}
+.comparator-categories .active a small {
+  color: #5a6bbf;
+}
+@media (min-width: 700px) {
+  .comparator-categories {
+    display: table;
+  }
+}
+.comparator-configuration {
+  background: #e8eaf6;
+  padding: 10px;
+  position: relative;
+}
+.comparator-configuration:before,
+.comparator-configuration:after {
+  content: " ";
+  display: table;
+}
+.comparator-configuration:after {
+  clear: both;
+}
+.comparator-configuration .header {
+  margin: 2px 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #21261f;
+  line-height: 1.2;
+}
+.comparator-configuration .form-group {
+  margin-top: 10px;
+}
+@media (min-width: 700px) {
+  .comparator-configuration .form-group {
+    float: left;
+    margin-right: 20px;
+  }
+  .form-group.vyhlasenia {
+	  width: 100%;
+  }
+}
+.comparator-configuration .form-group > label {
+  font-weight: bold;
+}
+.comparator-configuration .input input,
+.comparator-configuration .input select {
+  width: 300px;
+}
+.comparator-configuration .input input.error,
+.comparator-configuration .input select.error {
+	border: 1px solid red !important;
+}
+@media (min-width: 700px) {
+  .comparator-configuration .input input,
+  .comparator-configuration .input select {
+    width: auto;
+  }
+}
+@media (min-width: 700px) {
+  .comparator-configuration .form-group-uver .input input,
+  .comparator-configuration .form-group-hodnota .input input {
+    width: 80px;
+  }
+}
+.comparator-configuration > .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .comparator-configuration > .btn {
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .comparator-ciara{
+	  width: 660px;	
+	  border-bottom: 2px solid #E8EAF6;
+  }
+}
+.comparator-propertyselector {
+  background: #e8eaf6;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.comparator-propertyselector p {
+  margin: 0;
+  color: #fe4445;
+  font-weight: bold;
+}
+.comparator-propertyselector select {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .comparator-propertyselector {
+    display: none;
+  }
+}
+.comparator-table table {
+	border-spacing: 0;
+  width: 100%;
+}
+.comparator-table th {
+  padding: 25px 5px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+@media (min-width: 700px) {
+  .comparator-table th {
+    color: #3d59fe;
+  }
+}
+.comparator-table th .tooltip {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -0.5em;
+}
+.comparator-table th .comparator-table-sorter {
+  display: none;
+}
+@media (min-width: 700px) {
+  .comparator-table th .comparator-table-sorter {
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .comparator-table th.active .comparator-table-sorter {
+    color: #fe4445;
+    font-size: 11px;
+  }
+}
+.comparator-table td {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border-top: solid 1px #dde0f2;
+}
+.comparator-table td .mute {
+  font-size: 11px;
+  color: #646762;
+}
+.comparator-table th.col-data {
+  background: #c5cae9;
+}
+.comparator-table td.col-data {
+  background: #e8eaf6;
+}
+@media (min-width: 700px) {
+  .comparator-table td.col-data,
+  .comparator-table th.col-data {
+    background: none;
+  }
+  .comparator-table th:nth-child(2n) {
+    background: #c5cae9;
+  }
+  .comparator-table td:nth-child(2n) {
+    background: #e8eaf6;
+  }
+}
+.comparator-table .col-data {
+  display: none;
+}
+@media (min-width: 700px) {
+  .comparator-table .col-data {
+    display: table-cell;
+  }
+}
+.comparator-table.show-col-data-1 .col-data-1,
+.comparator-table.show-col-data-2 .col-data-2,
+.comparator-table.show-col-data-3 .col-data-3,
+.comparator-table.show-col-data-4 .col-data-4,
+.comparator-table.show-col-data-5 .col-data-5,
+.comparator-table.show-col-data-6 .col-data-6,
+.comparator-table.show-col-data-7 .col-data-7 {
+  display: table-cell;
+}
+.col-data {
+	color: #21261f;
+	font-size: 11px;
+	line-height: 16px;
+}
+th.col-data a {
+	color: #3d59fe;
+	font-weight: bold;
+}
+.col-data strong {
+	color: #21261f;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+.comparator-table td.col-name {
+  width: 100px;
+  padding: 10px;
+}
+.comparator-table td.col-name a {
+  display: block;
+  color: #646762;
+  font-size: 11px;
+  line-height: 16px;
+}
+.comparator-table td.col-name .logo img {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  margin-bottom: 5px;
+}
+.comparator-table td.col-action a.btn {
+  margin-bottom: 5px;
+  max-width: 90px;
+}
+.comparator-table td.col-action a.more {
+	color: #3d59fe;
+  font-size: 11px;
+  line-height: 16px;
+}
+p.comparator-source {
+  text-align: right;
+  font-size: 11px;
+  color: #646762;
+}
+p.comparator-source a {
+  white-space: nowrap; 
+}
+@media (min-width: 700px) {
+  p.comparator-source {
+    display: block;
+  }
+}
+.comparator-configuration .form-group-nutnyucet {
+	margin-top: 0;
+	float: none;
+	clear: both;
+}
+@media (min-width: 700px) {
+	.comparator-configuration .form-group-fixacie {
+		margin-bottom: 15px;
+	}
+}
+.form-group-nutnyucet div {
+	position: relative;
+}
+.form-group-nutnyucet div input {
+	display: inline-block;
+	vertical-align: middle;
+	height: auto;
+	line-height: normal;
+}
+.form-group-nutnyucet div span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 3px;
+}
+@media screen and (max-width: 700px) {
+	.form-group-nutnyucet div input {
+		position: absolute;
+		left: 0;
+		top: 2px;
+	}
+	.form-group-nutnyucet div span {
+		padding-left: 16px;
+	}
+	.comparator-configuration .form-group-nutnyucet {
+		margin-top: 10px
+	}
+}
+
+/* Tooltip */
+
+.tooltip .tooltip-trigger .fa {
+	color: #9fa6d8;
+	font-size: 16px;
+	line-height: 20px;
+}
+.tooltip .tooltip-content {
+  display: none;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.3;
+  color: #21261f;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.45);
+  z-index: 800;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 10px;
+  left: 50%;
+  width: 260px;
+  margin-left: -130px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
