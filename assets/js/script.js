@@ -144,9 +144,11 @@
 			body.offsetHeight;
 			menu__wrap.classList.remove('notrn');
 		} else {
+			menu__wrap.classList.add('notrn');
 			breadcrumbs.classList.remove('show');
 			menu__trigger.classList.remove('show');
 			body.classList.remove('breadcrumbs__visible');
+			menu__wrap.classList.remove('notrn');
 		}
 	} 
 	
