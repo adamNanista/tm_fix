@@ -233,9 +233,6 @@ sub {
 .header__inner {
 	padding: 15px;
 }
-.header__breadcrumbs {
-	display: none;
-}
 .header__logo {
 	max-width: 200px;
 }
@@ -314,34 +311,6 @@ sub {
 	.search__submit:hover {
 		color: #fe4445;
 	}
-	
-	/* Breadcrumbs */
-	
-	.header__breadcrumbs {
-		display: block;
-		padding: 0 20px;
-		
-		background: #5c6bc0;
-	}
-	.breadcrumbs__list {
-		font-size: 0;
-	}
-	.breadcrumbs__item + .breadcrumbs__item {
-		margin: 0 0 0 15px;
-	}
-	.breadcrumbs__anchor {
-		padding: 20px 0;
-		
-		color: #ffffff;
-		font-size: 21px;
-		line-height: 25px;
-	}
-	.breadcrumbs__anchor i {
-		margin: 0 0 0 15px;
-	}
-	.breadcrumbs__item:last-child i {
-		display: none;
-	}
 }
 
 @media screen and (min-width: 1030px) {
@@ -352,27 +321,6 @@ sub {
 		margin: auto;
 		max-width: 990px;
 		padding: 20px 0;
-	}
-	
-	/* Breadcrumbs */
-	
-	.header__breadcrumbs {
-		height: 70px;
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: -70px;
-		
-		box-shadow: 0 0 0 rgba(0,0,0,0.16), 0 0 0 rgba(0,0,0,0.23);
-	}
-	.header__breadcrumbs.show {
-		top: 0;
-		
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	}
-	.breadcrumbs__anchor {
-		font-size: 28px;
-		line-height: 30px;
 	}
 }
 
@@ -482,9 +430,6 @@ sub {
 }
 
 @media screen and (min-width: 1030px) {
-	.breadcrumbs__visible .menu {
-		height: 45px;
-	}
 	.menu__wrap {
 		bottom: auto;
 		overflow: visible;
@@ -498,38 +443,12 @@ sub {
 		background: #5c6bc0;
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	}
-	.breadcrumbs__visible .menu__wrap {
-		bottom: 0;
-		overflow: auto;
-		overflow-x: hidden;
-		overflow-y: auto;
-		position: fixed;
-		right: -230px;
-		top: 70px;
-		width: 230px;
-		
-		background: #ffffff;
-		box-shadow: 0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0);
-	}
-	.breadcrumbs__visible .open .menu__wrap {
-		right: 0;
-	}
 	.menu__inner {
 		margin: auto;
 		max-width: 1010px;
 	}
-	.breadcrumbs__visible .menu__inner {
-		margin: 0;
-		max-width: none;
-	}
 	.menu__trigger {
-		position: fixed;
-		right: 5px;
-		top: -63px;
-		z-index: 99998;
-	}
-	.menu__trigger.show {
-		top: 7px;
+		display: none;
 	}
 }
 
@@ -590,9 +509,6 @@ sub {
 	.menu__nav.top--level {
 		padding: 0;
 	}
-	.breadcrumbs__visible .menu__nav.top--level {
-		padding: 8px 0;
-	}
 	.menu__nav.lower--level {
 		display: none;
 		height: auto !important;
@@ -607,32 +523,12 @@ sub {
 		background: #5c6bc0;
 		border-radius: 0 0 4px 4px;
 	}
-	.breadcrumbs__visible .menu__nav.lower--level {
-		display: block;
-		height: 0px !important;
-		left: auto;
-		min-width: 0;
-		overflow: hidden;
-		padding: 0;
-		position: static;
-		top: auto;
-		z-index: auto;
-		
-		background: transparent;
-		background: rgba(0, 0, 0, 0);
-		border-radius: 0;
-	}
 	.menu__nav.top--level > .nav__item {
 		float: left;
 		position: relative;
 	}
 	.menu__nav.top--level > .nav__item:last-child {
 		float: right;
-	}
-	.breadcrumbs__visible .menu__nav.top--level > .nav__item, 
-	.breadcrumbs__visible .menu__nav.top--level > .nav__item:last-child {
-		float: none;
-		position: static;
 	}
 	.nav__item:hover > .lower--level {
 		display: block;
@@ -643,47 +539,24 @@ sub {
 		
 		color: #c5cae9;
 	}
-	.breadcrumbs__visible .nav__anchor {
-		padding: 6px 40px 6px 20px;
-		
-		color: #000000;
-	}
 	.lower--level .nav__anchor {
 		padding: 3px 15px;
-	}
-	.breadcrumbs__visible .lower--level .nav__anchor {
-		padding: 6px 20px 6px 30px;
 	}
 	.menu__nav.top--level > .nav__item > .nav__anchor {
 		height: 45px;
 		
 		line-height: 45px;
 	}
-	.breadcrumbs__visible .menu__nav.top--level > .nav__item > .nav__anchor {
-		height: auto;
-		line-height: 20px;
-	}
 	.nav__item.active > .nav__anchor {
 		color: #ffffff;
 		
 		border-bottom: 4px solid #fe4445;
-	}
-	.breadcrumbs__visible .nav__item.active > .nav__anchor {
-		color: #000000;
-		
-		border-bottom: 0 none;
 	}
 	.nav__anchor:active, 
 	.nav__anchor:focus, 
 	.nav__anchor:hover {
 		color: #ffffff;
 		text-decoration: underline;
-	}
-	.breadcrumbs__visible .nav__anchor:active, 
-	.breadcrumbs__visible .nav__anchor:focus, 
-	.breadcrumbs__visible .nav__anchor:hover {
-		color: #000000;
-		text-decoration: none;
 	}
 	.nav__anchor i {
 		display: none;
